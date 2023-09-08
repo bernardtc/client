@@ -10,7 +10,7 @@ const API_URL = "https://uplay.cyclic.cloud";
 function ProfileImage() {
   const [showUpload, setShowUpload] = useState(false);
   const [image, setImage] = useState("");
-  const { user, setUser, isLoggedIn } = useContext(AuthContext);
+  const { isLoggedIn, user, setUser } = useContext(AuthContext);
 
   const handleFileUpload = (e) => {
     const uploadData = new FormData();
@@ -29,7 +29,7 @@ function ProfileImage() {
   const handleImgSubmit = (e) => {
     e.preventDefault();
     axios
-      .put(`${API_URL}/api/users`, { ...user, image })
+      .put(`${API_URL}/api/users`, { _id: user._id, image })
       .then((response) => {
         setUser(response.data.updatedUser);
         setImage("");
@@ -49,13 +49,13 @@ function ProfileImage() {
                 <img
                   src={user.image}
                   alt={"profile_image"}
-                  style={{ width: "50px", height: "50px", borderRadius: "75%" }}
+                  style={{ width: "200px", height: "200px" }}
                 />
               ) : (
                 <img
                   src={avatarImage}
                   alt={"profile_image"}
-                  style={{ width: "50px", height: "50px", borderRadius: "75%" }}
+                  style={{ width: "200px", height: "200px" }}
                 />
               )}
               {!showUpload && (
@@ -72,13 +72,15 @@ function ProfileImage() {
                     name="image"
                     onChange={(e) => handleFileUpload(e)}
                   />
+                  <button type="submit">Update Image</button>
                   <button
                     className="cancelEditButton"
                     onClick={() => setShowUpload(!showUpload)}
+                    type="button"
                   >
                     Cancel Edit
                   </button>
-                  <button type="submit">Save new profile image</button>
+                  
                 </form>
               )}
             </div>

@@ -75,6 +75,7 @@ function AuthProviderWrapper({ children }) {
         isLoggedIn,
         isLoading,
         user,
+        setUser,
         storeToken,
         authenticateUser,
         logOutUser,
