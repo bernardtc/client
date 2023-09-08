@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import "./AlbumDetails.css";
 
 const AlbumDetail = ({ album, refreshAlbumList }) => {
-  const API_URL = "http://localhost:5005";
+  const API_URL = "https://uplay.cyclic.cloud/";
 
   const deleteAlbum = async (albumId) => {
     try {

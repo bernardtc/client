@@ -4,7 +4,7 @@ import { Row } from "antd";
 import { toast } from "react-toastify";
 import AlbumDetail from "./AlbumDetails";
 
-const API_URL = "http://localhost:5005";
+const API_URL = "https://uplay.cyclic.cloud/";
 
 function AlbumList() {
   const [albums, setAlbums] = useState([]);

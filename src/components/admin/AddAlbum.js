@@ -23,7 +23,7 @@ const enumValues = {
     "Blue",
   ],
 };
-const API_URL = "http://localhost:5005";
+const API_URL = "https://uplay.cyclic.cloud/";
 
 function Album() {
   const initForm = {
@@ -271,7 +271,7 @@ export default Album;
 // const enumValues = {
 //   genre: ["Rock", "Hip hop", "Pop Music", "Country music", "Punk rock", "Christian/Gospel", "Indie rock", "Techno", "New wave", "Instrumental", "Reggae", "Rhythm", "Blue"],
 // };
-// const API_URL = "http://localhost:5005";
+// const API_URL = "https://uplay.cyclic.cloud/";
 
 // function Album() {
 //   const initForm = {

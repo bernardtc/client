@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-const API_URL = 'http://localhost:5005';
+const API_URL = 'https://uplay.cyclic.cloud/';
 
 function EditTrack() {
   const { trackId } = useParams();

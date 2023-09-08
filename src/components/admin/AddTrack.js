@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Input, Button } from "antd";
 import { toast } from "react-toastify";
 
-const API_URL = "http://localhost:5005";
+const API_URL = "https://uplay.cyclic.cloud/";
 
 function AddTrack() {
   const [selectedFile, setSelectedFile] = useState(null);

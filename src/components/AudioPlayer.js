@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-const API_URL = 'http://localhost:5005';
+const API_URL = 'https://uplay.cyclic.cloud/';
 
 const AudioPlayer = ({ trackId }) => {
   const [audioUrl, setAudioUrl] = useState(null);

@@ -3,7 +3,7 @@ import { Button, Table, Space, Popconfirm, message } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const API_URL = "http://localhost:5005";
+const API_URL = "https://uplay.cyclic.cloud/";
 
 function Artists() {
   const [artists, setArtists] = useState([]);
