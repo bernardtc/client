@@ -18,7 +18,7 @@ root.render(
      <AuthProviderWrapper>
       <ThemeProviderWrapper>
          <App />
-         <AudioPlayer/>
+         
       </ThemeProviderWrapper>
      </AuthProviderWrapper>
     </Router>
