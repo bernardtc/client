@@ -18,7 +18,6 @@ root.render(
      <AuthProviderWrapper>
       <ThemeProviderWrapper>
          <App />
-         
       </ThemeProviderWrapper>
      </AuthProviderWrapper>
     </Router>
