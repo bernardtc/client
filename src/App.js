@@ -14,6 +14,7 @@ import AdminHome from "./components/admin/AdminHome";
 import AddArtist from "./components/admin/AddArtist";
 import TrackList from "./pages/TrackList";
 import Playlist from "./pages/Playlist";
+import Profile from "./pages/Profile";
 import CreatePlaylist from "./pages/CreatePlaylist";
 import EditAlbum from "./components/admin/EditAlbum";
 import EditTrack from "./components/admin/EditTrack";
@@ -36,10 +37,11 @@ function App() {
       <Route path="/add/artist" element={<AddArtist/>}/>
       <Route path="/track" element={<AddTrack/>}/>
       <Route path="/album/list" element={<AlbumList/>}/>
-        <Route path="/album" element={<Album/>}/>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
+      <Route path="/profile/:username" element={<Profile/>}/>
+      <Route path="/album" element={<Album/>}/>
+      <Route exact path="/" element={<Home />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/login" element={<Login />} />
       </Routes>
       <ToastContainer/>
     </div>
