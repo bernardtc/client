@@ -5,11 +5,6 @@ import { AuthContext } from "../context/auth.context";
 import logoImage from '../assets/logo3.png';
 
 
-
-
-
-
-
 function Navbar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const { isLoggedIn , user } = useContext(AuthContext);

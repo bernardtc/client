@@ -3,7 +3,7 @@
 // import { toast } from 'react-toastify';
 // import { IoPlaySharp, IoPauseSharp } from 'react-icons/io5';
 
-// const API_URL = 'https://uplay.cyclic.cloud/';
+// const API_URL = 'https://uplay.cyclic.cloud';
 
 // const Controls = ({ trackId }) => {
 //   const [isPlaying, setIsPlaying] = useState(false);

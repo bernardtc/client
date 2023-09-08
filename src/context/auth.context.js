@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_URL = "https://uplay.cyclic.cloud/";
+const API_URL = "https://uplay.cyclic.cloud";
 
 const AuthContext = React.createContext();
 

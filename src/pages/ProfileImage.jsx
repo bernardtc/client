@@ -5,7 +5,7 @@ import axios from "axios";
 import { Input } from "antd";
 import avatarImage from "../assets/avatar.png";
 
-const API_URL = "https://uplay.cyclic.cloud/";
+const API_URL = "https://uplay.cyclic.cloud";
 
 function ProfileImage() {
   const [showUpload, setShowUpload] = useState(false);

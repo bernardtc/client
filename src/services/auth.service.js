@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://uplay.cyclic.cloud/',
+  baseURL: 'https://uplay.cyclic.cloud',
 });
 
 const signUp = async ({ name, email, password }) => {

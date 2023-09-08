@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 
 
-const API_URL = "https://uplay.cyclic.cloud/";
+const API_URL = "https://uplay.cyclic.cloud";
 
 
 const PlaylistList = () => {
